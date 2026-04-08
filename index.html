@@ -1,34 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Net Food</title>
+    <title>Net Foods</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div class="container">
+
         <header>
-            <h1>NET FOOD</h1>
-            <p>subtítulo</p>
+            <div class="logo">
+                <img src="image/netfoods_icone.png" alt="Ícone Net Foods">
+                <div class="logo-texto">
+                    <p class="logo-nome">
+                        <span class="logo-net">Net</span><span class="logo-foods">Foods</span>
+                    </p>
+                    <p class="logo-tagline">Salgados · Marmitas · Bebidas</p>
+                </div>
+            </div>
+
+            <form action="/buscar" method="GET">
+                <input type="text" placeholder="Pesquisar...">
+                <button type="submit">
+                    <img src="image/lupa.png" alt="Buscar">
+                </button>
+            </form>
+
             <nav>
-                <a href="#Login"></a>
-                <a href="#Sobre"></a>
-                <a href="#Hitórico"></a>
-                <a href="#Delivery"></a>
+                <a href="#login">Login</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#historico">Histórico</a>
+                <a href="#delivery">Delivery</a>
+                <a href="#carrinho">
+                    <img src="image/carrinho-de-compra.png" alt="Carrinho de compras">
+                </a>
             </nav>
         </header>
-        <main>
 
-        <div class="container-salgados-para-festa">
-            <section>
-                
+        <main>
+            <section class="salgados">
+                <div class="container-cards-salgados">
+
+                    <div class="card">
+                        <img src="image/mine-pastel.png" alt="Mine Pastel">
+                        <div class="card-body">
+                            <h4 class="card-title">Combo 30 Mine Pastel</h4>
+                            <p class="card-preco">R$15,00</p>
+                            <p class="card-text">Recheado com queijo, uma delícia!</p>
+                            <button type="button">Selecionar</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="image/mine-fogazza.png" alt="Mine Fogazza">
+                        <div class="card-body">
+                            <h4 class="card-title">Combo 30 Mine Fogazza</h4>
+                            <p class="card-preco">R$15,00</p>
+                            <p class="card-text">Recheado com queijo, uma delícia!</p>
+                            <button type="button">Selecionar</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="image/enroladinho-de-calabresa.png" alt="Enroladinho de Calabresa">
+                        <div class="card-body">
+                            <h4 class="card-title">Combo 30 Enroladinho de Calabresa</h4>
+                            <p class="card-preco">R$15,00</p>
+                            <p class="card-text">Recheado com calabresa, uma delícia!</p>
+                            <button type="button">Selecionar</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="image/bolinho-de-queijo.jpg" alt="Bolinho de Queijo">
+                        <div class="card-body">
+                            <h4 class="card-title">Combo 30 Bolinho de Queijo</h4>
+                            <p class="card-preco">R$15,00</p>
+                            <p class="card-text">Recheado com queijo, uma delícia!</p>
+                            <button type="button">Selecionar</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="image/coxinha.png" alt="Coxinha">
+                        <div class="card-body">
+                            <h4 class="card-title">Combo 30 Coxinha</h4>
+                            <p class="card-preco">R$15,00</p>
+                            <p class="card-text">Recheado com frango, uma delícia!</p>
+                            <button type="button">Selecionar</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="image/croquete-de-frango.jpg" alt="Croquete de Frango">
+                        <div class="card-body">
+                            <h4 class="card-title">Combo 30 Croquete de Frango</h4>
+                            <p class="card-preco">R$15,00</p>
+                            <p class="card-text">Recheado com frango, uma delícia!</p>
+                            <button type="button">Selecionar</button>
+                        </div>
+                    </div>
+
+                </div>
             </section>
-        </div>
         </main>
 
     </div>
-    
 </body>
+
 </html>
