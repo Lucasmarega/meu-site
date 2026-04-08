@@ -1,0 +1,155 @@
+/* ============================================
+   VARIÁVEIS
+   ============================================ */
+:root {
+  --cor-primaria:   #000000;
+  --cor-acento:     #ffbf00;
+  --cor-texto:      #FFFFFF;
+  --cor-input-bg:   #2C2C2A;
+  --fonte-base:     'Poppins', Arial, sans-serif;
+  --raio-borda:     8px;
+  --transicao:      all 0.3s ease;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fonte-base);
+  background-color: #111;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+header {
+  background-color: #070707;
+  height: 115px;
+  padding: 0 40px;
+  display: flex;              /* ← alinha tudo numa linha */
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+/* ============================================
+   LOGO
+   ============================================ */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+    
+}
+
+.logo-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.logo-nome {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1;
+     margin-bottom: 2px;
+}
+
+.logo-net {
+    color: #FFFFFF;
+}
+
+.logo-foods {
+    color: #ffbf00;
+}
+
+.logo-tagline {
+    font-size: 12px;
+    color: #f8ba00;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+/* ============================================
+   FORMULÁRIO DE BUSCA
+   ============================================ */
+header form {
+  flex: 1;
+  max-width: 640px;
+  display: flex;
+  align-items: center;
+  background-color: var(--cor-input-bg);
+  border: 1px solid #3a3a38;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+header form input[type="text"] {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  color: #FFFFFF;
+  font-family: var(--fonte-base);
+  font-size: 14px;
+}
+
+header form input::placeholder {
+  color: #888;
+}
+
+header form button[type="submit"] {
+  background: transparent;
+  border: none;
+  border-left: 1px solid #3a3a38;
+  padding: 10px 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header form button img {
+  width: 18px;
+  height: 18px;
+  filter: invert(1);   /* lupa branca */
+}
+
+/* ============================================
+   NAV
+   ============================================ */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 14px;
+  transition: var(--transicao);
+}
+
+nav a:hover {
+  color: var(--cor-acento);
+}
+
+nav a img {
+  width: 26px;
+  height: 26px;
+  filter: invert(1);
+  vertical-align: middle;
+}
